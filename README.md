@@ -18,6 +18,6 @@ and follow
 
 <h1> Credits <h1></br>
  
-<a herf="https://github.com/rafsanbasunia"> Rafsan </a>
+<a href="https://github.com/rafsanbasunia">Rafsan</a>
  </body>
 </html>
