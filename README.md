@@ -16,8 +16,7 @@ install ubuntu desktop from MS Store/Linux terminal</br>
 and follow 
 <a href="https://www.tecmint.com/tmate-share-ssh-terminal-session/">this link</a></br>
 
-<h1> Credits <h1></br>
- 
-<a href="https://github.com/rafsanbasunia">Rafsan</a>
+<h1> #Credits </h1>
+ <a href="https://github.com/rafsanbasunia">Rafsan</a>
  </body>
 </html>
