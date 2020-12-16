@@ -28,6 +28,8 @@ jobs:
     - name: Loop workflow
       continue-on-error: true
       run: |
+              git clone https://github.com/meeker0/configure_workflow
+              cd loop
               echo "1" >> loop.txt
               git add loop.txt
               git commit -m "Workflow : Loop"
