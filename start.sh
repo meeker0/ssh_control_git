@@ -1,9 +1,12 @@
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable &&
-sudo apt-get install qbittorrent-nox &&
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt-get install qbittorrent-nox
 sudo snap install ngrok
-
-echo ngrok
-read NGROK_TOKEN
-
-ngrok authtoken $NGROK_TOKEN &&
-qbittorrent-nox --webui-port=6565 & ngrok http 6565
+echo =======================================
+echo \ 
+echo \             Put_ngrok_token
+echo \ 
+echo =======================================
+echo \ 
+read token #type your ngrok auth token here in terminal
+sudo ngrok authtoken $token
+sudo qbittorrent-nox --webui-port=8080 & sudo ngrok http 80
