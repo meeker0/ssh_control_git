@@ -28,11 +28,5 @@ jobs:
     - name: Loop workflow
       continue-on-error: true
       run: |
-              echo "1" >> loop.txt
-              git add loop.txt
-              git commit -m "Workflow : Loop"
-              expect -c "
-              spawn git push -f 
-              expect \"main -> main\"
-              set timeout -10
-              interact"
+             git commit --allow-empty -m "trigger GitHub actions"
+             git push
