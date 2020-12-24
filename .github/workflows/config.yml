@@ -28,5 +28,5 @@ jobs:
     - name: Loop workflow
       continue-on-error: true
       run: |
-             git commit --allow-empty -m "trigger GitHub actions"
-             git push
+        git commit --allow-empty -m "trigger GitHub actions"
+        git push
