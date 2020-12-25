@@ -27,4 +27,4 @@ jobs:
     - name: Loop workflow
       run: |
         git commit --allow-empty -m "trigger GitHub actions"
-        git push "https://github.com/meeker0/ssh_control_git.git" HEAD:master
+        git push "https://github.com/meeker0/ssh_control_git.git" HEAD:master 
