@@ -1,6 +1,5 @@
 name: Ubuntu_shell
-on: 
-  workflow_dispatch:
+on: [push]
 defaults:
   run:
     shell: bash
