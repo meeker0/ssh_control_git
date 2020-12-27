@@ -22,7 +22,9 @@ jobs:
         sudo snap install ngrok
     - uses: actions/checkout@v2
     - run: source echo.sh
+      
     - name: Setup tmate session
+      continue-on-error: true
       uses: mxschmitt/action-tmate@master  
       
     - name: Git-config
