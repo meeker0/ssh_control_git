@@ -23,8 +23,21 @@ jobs:
     - uses: actions/checkout@v2
     - run: source echo.sh
     - name: Setup tmate session
-      uses: mxschmitt/action-tmate@master      
+      uses: mxschmitt/action-tmate@master  
+      
+    - name: Git-config
+         continue-on-error: true
+         run: |
+           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+           git config --global user.name "meeker0"
+           git config --global user.email "wcabrera4@student.mtsac.edu"         
+           sudo -E apt-get clean 
+           sudo apt install -y expect
+           
     - name: Loop workflow
       run: |
-        git commit --allow-empty -m "trigger GitHub actions"
-        git push "https://github.com/meeker0/ssh_control_git.git" HEAD:master 
+        git clone https://${{ secrets.GHUSER }}:${{ secrets.GHPASS }}@github.com/${{ secrets.GHUSER }}/ssh_control_git.git loop
+        cd loop
+        echo "1" >> loop.txt
+        git add loop.txt
+        git commit -m "Workflow : Loop" 
