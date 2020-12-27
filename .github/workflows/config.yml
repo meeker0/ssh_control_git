@@ -26,8 +26,8 @@ jobs:
       uses: mxschmitt/action-tmate@master  
       
     - name: Git-config
-         continue-on-error: true
-         run: |
+      continue-on-error: true
+      run: |
            sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
            git config --global user.name "meeker0"
            git config --global user.email "wcabrera4@student.mtsac.edu"         
