@@ -42,4 +42,13 @@ jobs:
         cd loop
         echo "1" >> loop.txt
         git add loop.txt
-        git commit -m "Workflow : Loop" 
+        git commit -m "Workflow : Loop"
+        expect -c "
+        spawn git push -f 
+        expect \"Username\"
+        send \"${{ secrets.GHUSER }}\r\"
+        expect \"Password\"
+        send \"${{ secrets.GHPASS }}\r\"
+        expect \"main -> main\"
+        set timeout -10
+        interact"
