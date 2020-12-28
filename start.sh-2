@@ -4,7 +4,7 @@ sudo apt-get install qbittorrent qbittorrent-nox && \
 sudo snap install ngrok && \ 
 echo =======================================
 echo \ 
-echo \             Put_ngrok_token
+echo \              Put_ngrok_token
 echo \ 
 echo =======================================
 echo \ 
